@@ -6,8 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Berry Cloud</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script type="text/javascript">
+      var
+        lang = navigator.language,
+        target = 'berrycloud.co.uk';
+
+      if (typeof lang === 'string' && ~lang.indexOf('cs')) {
+        target = 'berrycloud.cz';
+      }
+
+      document.location = 'http://' + target;
+    </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,11 +27,9 @@
   </head>
   <body>
     <h1>Berry Cloud</h1>
-    
-    <p>Coming soon.</p>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <p>Redirecting you to our local website.</p>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     
